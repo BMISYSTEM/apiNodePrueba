@@ -1,8 +1,8 @@
 // importamos el orm
 import { Sequelize } from "sequelize"; 
 // instanciamos una conexion por medio de sequelize pasamos la base de datos el usuario el password asi como el motor de base y su host
-const sequelize = new Sequelize('app','root','root',{
-    host:'127.0.0.1',
+const sequelize = new Sequelize('railway','root','oDChYUsRMYaZwRHDzqWVOyPkamlPjGUK',{
+    host:'roundhouse.proxy.rlwy.net',
     dialect:'mysql',
 })
 // prueba de coneccion
