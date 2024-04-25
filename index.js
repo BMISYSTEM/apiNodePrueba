@@ -6,11 +6,16 @@ import sequelize from './Config/db.js';
 import { User,Productos } from './Model/index.js'; 
 // instanciamos express
 const app = express();
+app.use(bodyParse.urlencoded({extends:true}));
+app.use(bodyParse.json());
 // definicion de puerto 
 const port = 3000;
 // se define el endpoint
 app.get('/holamundo',(req,res)=>{
     res.send('hola mundo desde node desplegado en raiwalli')
+});
+app.get('/',(req,res)=>{
+    res.send('aplicacion desplegada')
 });
 // configuramos el metodo de escuchar por un puerto determinado mandamos el mensaje de fecha y hora de ejecucion del servidor
 app.listen(port,()=>{
