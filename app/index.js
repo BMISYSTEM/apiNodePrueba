@@ -18,6 +18,6 @@ app.get('/',(req,res)=>{
     res.send('aplicacion desplegada')
 });
 // configuramos el metodo de escuchar por un puerto determinado mandamos el mensaje de fecha y hora de ejecucion del servidor
-app.listen(PORT,()=>{
+app.listen(PORT,"0.0.0.0",()=>{
     console.log('Servidor ejecutandose en el puerto  . '+ PORT)
 })
