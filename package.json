@@ -7,6 +7,6 @@
     "sequelize": "^6.37.3"
   },
   "scripts": {
-    "start": "node ./app/index.js"
+    "start": "node --env-file=.env ./app/index.js"
   }
 }
