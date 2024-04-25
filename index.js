@@ -2,9 +2,9 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 // importamos la conexion a base de datos
-import sequelize from './Config/db.js';
+// import sequelize from './Config/db.js';
 // inicializamos todos los modelos 
-import { User,Productos } from './Model/index.js'; 
+// import { User,Productos } from './Model/index.js'; 
 // instanciamos express
 const app = express();
 app.use(bodyParser.urlencoded({extends:true}));
