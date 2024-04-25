@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 // se define el endpoint
 app.get('/holamundo',(req,res)=>{
-    res.send('hola mundo desde node')
+    res.send('hola mundo desde node desplegado en raiwalli')
 });
 // configuramos el metodo de escuchar por un puerto determinado mandamos el mensaje de fecha y hora de ejecucion del servidor
 app.listen(port,()=>{
