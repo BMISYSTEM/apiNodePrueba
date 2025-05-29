@@ -6,6 +6,7 @@
     "mysql2": "^3.9.7",
     "sequelize": "^6.37.3"
   },
+  "main": "./app/index.js",
   "scripts": {
     "start": "node ./app/index.js"
   }
