@@ -9,7 +9,7 @@ import { PORT } from './Config/ports.js';
 // instanciamos express
 const app = express();
 
-app.use(bodyParser.urlencoded({extends:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // se define el endpoint
 app.get('/holamundo',(req,res)=>{
