@@ -1,7 +1,7 @@
 // se importa el paquete express
 import express from 'express';
 import bodyParser from 'body-parser';
-import { PORT } from '../Config/ports.js';
+import { PORT } from './Config/ports.js';
 // importamos la conexion a base de datos
 // import sequelize from './Config/db.js';
 // inicializamos todos los modelos 
