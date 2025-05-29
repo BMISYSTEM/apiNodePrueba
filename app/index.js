@@ -1,7 +1,7 @@
 // se importa el paquete express
 import express from 'express';
 import bodyParser from 'body-parser';
-import { PORT , HOST} from '../Config/ports.js';
+import { PORT } from '../Config/ports.js';
 // importamos la conexion a base de datos
 // import sequelize from './Config/db.js';
 // inicializamos todos los modelos 
@@ -19,6 +19,6 @@ app.get('/',(req,res)=>{
     res.send('aplicacion desplegada')
 });
 // configuramos el metodo de escuchar por un puerto determinado mandamos el mensaje de fecha y hora de ejecucion del servidor
-app.listen(PORT,HOST,()=>{
-    console.log('Servidor ejecutandose en el puerto  . '+ PORT + ' en el host =' + HOST)
+app.listen(PORT,()=>{
+    console.log('Servidor ejecutandose en el puerto  . '+ PORT + ' en el host =')
 })
